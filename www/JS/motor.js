@@ -1,5 +1,5 @@
 var digitado
-var placa
+var login
 var proprietarionome
 
 function carregar() {
@@ -20,8 +20,8 @@ function exibir() {
 }
 
 function cadastrar() {
-   placa = document.getElementById('placa').value
-   proprietarionome = document.getElementById('proprietario').value
+   placa = document.getElementById('login').value
+   proprietarionome = document.getElementById('senha').value
    localStorage.setItem(placa, proprietarionome)
 alert("CADASTROU!")
 alert(localStorage.getItem(placa))
